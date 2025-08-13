@@ -59,3 +59,28 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+# EDM - Employee Department Management
+
+## Requirements
+- PHP >= 8.1
+- Composer
+- Laravel 10
+- MySQL
+
+## Installation
+```bash
+git clone https://github.com/vishnupb666/EDM.git
+cd EDM
+composer install
+cp .env.example .env
+php artisan key:generate
+
+DB_DATABASE=edm
+DB_USERNAME=root
+DB_PASSWORD=
+
+php artisan migrate --seed
+
+
